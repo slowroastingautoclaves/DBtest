@@ -5,7 +5,7 @@ public class DBdriver {
     private Connection con;		
     private final String DBNAME="SlowRoastingAuto";		
     private final String PASSWORD="cs2340team58";		
-    private final String IP = "";		
+    private final String IP = "73.237.37.220";		
 		
     public DBdriver() {		
 		/*		

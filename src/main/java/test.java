@@ -4,7 +4,7 @@
         public class test {
         public static void main(String[] arg) {
             DBdriver x = new DBdriver();
-        x.sendUpdate("INSERT INTO testing VALUES ('MUAHAHAHA');");
+        x.sendUpdate("INSERT INTO testing VALUES ('something new');");
     }
 
 
