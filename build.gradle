@@ -1,0 +1,23 @@
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+version = '1'
+
+
+jar  {
+  manifest {
+     attributes  'Implementation-Title' : 'DBtest' ,
+                 'Implementation-Version' : version,
+                 'Main-Class' : 'test',
+		'Class-Path' : 'mysql-connector-java-5.0.8-bin.jar'
+		
+
+    }
+
+    destinationDir = file('.')
+    archiveName = 'DB.jar'
+}
+dependencies{
+compile files('mysql-connector-java-5.0.8-bin.jar')
+}
