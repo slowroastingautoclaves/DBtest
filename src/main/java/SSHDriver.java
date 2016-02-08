@@ -4,7 +4,7 @@
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
 public class SSHDriver {
-    static String hostIp = "128.61.105.200";
+    static String hostIp = "";
     static int lport;
     static String rhost;
     static int rport;
