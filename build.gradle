@@ -10,7 +10,7 @@ jar  {
      attributes  'Implementation-Title' : 'DBtest' ,
                  'Implementation-Version' : version,
                  'Main-Class' : 'test',
-		'Class-Path' : 'mysql-connector-java-5.0.8-bin.jar'
+		'Class-Path' : 'mysql-connector-java-5.0.8-bin.jar jsch-0.1.53.jar'
 		
 
     }
@@ -19,5 +19,5 @@ jar  {
     archiveName = 'DB.jar'
 }
 dependencies{
-compile files('mysql-connector-java-5.0.8-bin.jar')
+compile files('mysql-connector-java-5.0.8-bin.jar', 'jsch-0.1.53.jar')
 }

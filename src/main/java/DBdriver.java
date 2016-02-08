@@ -19,7 +19,7 @@ public class DBdriver {
 		
         try {		
             Class.forName("com.mysql.jdbc.Driver").newInstance();		
-            con = DriverManager.getConnection("jdbc:mysql://" + IP + ":3306/test",		
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test",
                     DBNAME,		
                     PASSWORD);		
 		
@@ -35,7 +35,8 @@ public class DBdriver {
 		
     public void closeConnection() {		
         try{		
-            con.close();		
+            con.close();
+            SSHDriver.CloseSSHConnection();
             if(con.isClosed()) {		
                 System.out.println("Connection successfully closed.");		
             }		
